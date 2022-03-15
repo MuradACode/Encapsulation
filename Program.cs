@@ -29,7 +29,7 @@ namespace Encapsulation
             FrontEnd frontEnd = new FrontEnd(name, surname, age, workExperience, languages);
             BackEnd backEnd = new BackEnd(name, surname, age, workExperience, languages);
             Console.Clear();
-            Console.WriteLine("Full name: " + person.GetFullName(name, surname) + "\n" + "Age: " + age + "\nWork experience: " + workExperience);
+            Console.WriteLine("Full name: " + person.GetFullName(name, surname) + "\n" + "Age: " + person.Age + "\nWork experience: " + developer.WorkExperience);
             Console.Write("Languages: ");
             for (int i = 1; i <= s; i++)
             {
