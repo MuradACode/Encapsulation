@@ -16,6 +16,12 @@ namespace Encapsulation.Models
         public string Name { get; set; }
         public string Surname { get; set; }
         public int Age {get { return age; } set { if (age > 0 && age < 150) age = value; } }
+        /// <summary>
+        /// Getting full name
+        /// </summary>
+        /// <param Name is: ="Name"></param>
+        /// <param Surname is: ="Surname"></param>
+        /// <returns></returns>
         public string GetFullName(string Name, string Surname)
         {
             string fullName = Name + " " + Surname;

@@ -8,10 +8,14 @@ namespace Encapsulation.Models
     {
         public Developer(string Name, string Surname, int Age, int workExperience) : base(Name, Surname, Age)
         {
-            workExperience = WorkExperience;
+            this.workExperience = WorkExperience;
         }
         protected int workExperience;
         public int WorkExperience { get { return workExperience; } set { if (workExperience > 0 && workExperience < 100) workExperience = value; } }
+        /// <summary>
+        /// Adds years experience
+        /// </summary>
+        /// <param Grow count: ="grow"></param>
         public void AddYearsExperiance(int grow)
         {
             workExperience += grow;
